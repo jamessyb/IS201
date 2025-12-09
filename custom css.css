@@ -1,0 +1,57 @@
+/* Custom stylesheet from scratch — at least four styles, font color, font family, etc. */
+
+/* Global typography */
+.scratch-body {
+  background:
+    linear-gradient(135deg, rgba(20,20,20,0.9), rgba(30,30,30,0.95)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect width="16" height="16" fill="%23111111"/></svg>');
+  color: #eaeaea;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header block style */
+.scratch-header {
+  background: radial-gradient(circle at 20% 20%, #222 0%, #111 60%);
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+/* Links and accents */
+a {
+  color: #ff6b6b;
+}
+a:hover {
+  color: #ffa69e;
+}
+
+/* Checklist styling */
+.scratch-checklist {
+  list-style: square;
+  padding-left: 1.25rem;
+}
+.scratch-checklist li {
+  margin-bottom: 0.35rem;
+  color: #f0f0f0; /* font color specified */
+}
+
+/* Content cards */
+section {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Tableau container for consistent spacing */
+.tableau-container {
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* At least three divs are being styled via these rules: .scratch-header, .tableau-container, aside block */
+aside {
+  border: 1px solid #444;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .scratch-header { padding: 1.5rem; }
+}
